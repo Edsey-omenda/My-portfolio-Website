@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Portfolio</title>
+</head>
+<body class="font-nunito">
+    <!-- intro-section -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+        <!-- navbar -->
+        <nav class="w-full fixed top-0 bg-white-400 z-10">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./img/portwind-logo.png"  alt="portwind-image">
+                    <span class="text-2xl font-bold text-indigo-900">Portwind</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500"><a href="#">homepage</a></li>
+                    <li  class="hover:text-gray-500"><a href="#">about me</a></li>
+                    <li  class="hover:text-gray-500"><a href="#">services</a></li>
+                    <li  class="hover:text-gray-500"><a href="#">works</a></li>
+                    <li  class="hover:text-gray-500"><a href="#">contact</a></li>
+                </ul>
+                <img class="hidden md:block w-6 cursor-pointer bg-white relative" 
+                alt="moon" 
+                src="./img/moon.avif">
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li><a href="#">homepage</a></li>
+                    <li><a href="#">about me</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- intro-content -->
+            <!-- image -->
+            <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+              src="./img/he-junhui-x2yWbC_NQxg-unsplash.jpg" 
+              alt="James Omenda">
+            <!-- circle -->
+            <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+            <!-- animated text -->
+            <div class="absolute top-1/3 left-8 text-xl sm:left-16 sm:text-4xl md:left-1/4  md:text-5xl lg:left-5 xl:left-45 xl:text-6xl font-bold">
+                <span class="text-gray-600">Freelance</span>
+                <p class="text-red-500">Developer</p>
+            </div>
+            <!-- texts -->
+            <div class="hidden lg:flex flex-col gap-5 absolute top-0 bottom-0 m-auto right-10 rounded-lg shadow-lg shadow-indigo-200 bg-white p-6 h-fit w-1/3">
+                <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm James</h1>
+                <p class="text-gray-500">
+                    With over 1 year experience on Fullstack Developer.
+                    My frontend stack ranges from Html,css, Javascript,
+                    Reactjs, Redux, Material UI, Bootstrap, Sass, 
+                    Jquery to Tailwindcss.My backend stack is Ruby and
+                    Ruby on rails with Sqlite3, Postgresql and Sql
+                    as my database mmanagement tools.
+                </p>
+                <a class="bg-indigo-800 text-white  rounded-md font-semibold text-xl px-3 py-2 w-fit" href="#contact">Hire Me</a>
+            </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
